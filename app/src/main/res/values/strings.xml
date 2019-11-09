@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sanket Vagadiya</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_profile">Profile</string>
+    <string name="title_work">Past Experience</string>
+    <string name="title_project">Projects</string>
+
+    <string name="splash_msg">Welcome to my app</string>
+
+    <string name="err_no_internet">Please connect your device with internet</string>
+
+</resources>

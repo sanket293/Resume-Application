@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:orientation="vertical"
+    tools:context=".ui.Profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Sanket Vagadiya"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvProfileSummary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="7dp"
+                android:padding="10dp"
+                android:textAlignment="textStart" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivGithub"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/github"
+
+                        ></ImageView>
+
+                    <ImageView
+                        android:id="@+id/ivPlayStore"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+
+                        android:src="@mipmap/playstore"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/ivLinkedIn"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/linkedin"></ImageView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
