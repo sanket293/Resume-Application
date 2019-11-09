@@ -45,7 +45,7 @@ public class WorkListAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         final ViewHolder holder;
 
-        LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(mContext.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
 
         if (view == null) {
@@ -64,7 +64,7 @@ public class WorkListAdapter extends BaseAdapter {
         holder.tvWorkAdapterJoinFrom = view.findViewById(R.id.tvWorkAdapterJoinFrom);
         holder.tvWorkAdapterJoinTo = view.findViewById(R.id.tvWorkAdapterJoinTo);
         holder.tvWorkAdapterJobResponsibilities = view.findViewById(R.id.tvWorkAdapterJobResponsibilities);
-        holder.ivCompanyImage = (ImageView) view.findViewById(R.id.ivCompanyImage);
+        holder.ivCompanyImage = view.findViewById(R.id.ivCompanyImage);
 
         setData(holder, i);
 

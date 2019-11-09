@@ -18,7 +18,7 @@ public class ProfileViewModel extends ViewModel {
         getJson();
     }
 
-    private JSONObject getJson() {
+    public JSONObject getJson() {
         JSONObject jsonObject = null;
         GetOnlineData getOnlineData = (GetOnlineData) new GetOnlineData(Constants.PROFILE_URL).execute();
         try {

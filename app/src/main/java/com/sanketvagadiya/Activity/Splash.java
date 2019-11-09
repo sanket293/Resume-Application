@@ -22,6 +22,7 @@ public class Splash extends AppCompatActivity {
             try {
                 Thread.sleep(Constants.SPLASH_SLEEP_TIME);
                 startActivity(new Intent(this, MainActivity.class));
+                finish();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

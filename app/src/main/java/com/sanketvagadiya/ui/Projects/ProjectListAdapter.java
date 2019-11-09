@@ -48,14 +48,14 @@ public class ProjectListAdapter extends BaseAdapter {
         final ViewHolder holder;
 
         LayoutInflater inflater = (LayoutInflater)
-                mContext.getSystemService(mContext.LAYOUT_INFLATER_SERVICE);
+                mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {
             holder = new ViewHolder();
 
             convertView = inflater.inflate(R.layout.project_listview_adapter, viewGroup, false);
 
-            holder.tvProjectName = (TextView) convertView.findViewById(R.id.tvProjectName);
-            holder.ivProjectImage = (ImageView) convertView.findViewById(R.id.ivProjectImage);
+            holder.tvProjectName = convertView.findViewById(R.id.tvProjectName);
+            holder.ivProjectImage = convertView.findViewById(R.id.ivProjectImage);
 
             holder.tvProjectName.setText(projectList.get(i).getProjectName());
 
